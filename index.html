@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samia Iftikhar | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Samia Iftikhar, a frontend developer building responsive interfaces with HTML, CSS, JavaScript and TypeScript.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="grain"></span>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a href="#home" class="brand">Samia Iftikhar</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <h1>
+          <span class="line"><span>Hi, I'm Samia Iftikhar.</span></span>
+          <span class="line"><span>I build interfaces that</span></span>
+          <span class="line"><span>work on every screen.</span></span>
+        </h1>
+        <p class="lead">Frontend developer and intern at Auspify Technologies. I work with HTML, CSS, JavaScript, TypeScript and C# to turn ideas into fast, accessible pages.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Send a message</a>
+        </div>
+
+        <div class="picker glass" role="group" aria-label="Site accent color">
+          <p class="picker-label">Pick the accent color for this site</p>
+          <div class="swatches">
+            <button class="swatch" type="button" data-accent="#2F4BFF" aria-label="Cobalt" aria-pressed="true" style="--swatch:#2F4BFF"></button>
+            <button class="swatch" type="button" data-accent="#C2185B" aria-label="Berry" aria-pressed="false" style="--swatch:#C2185B"></button>
+            <button class="swatch" type="button" data-accent="#0B7A55" aria-label="Pine" aria-pressed="false" style="--swatch:#0B7A55"></button>
+            <button class="swatch" type="button" data-accent="#6D28D9" aria-label="Violet" aria-pressed="false" style="--swatch:#6D28D9"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="avatar" aria-hidden="true">SI</div>
+        <div>
+          <h2 class="section-title">About me</h2>
+          <!-- Replace this text with your own words. Keep it short and specific. -->
+          <p>I'm a frontend developer who likes turning a design idea into a page that loads fast and works on any screen. I build with HTML, CSS and JavaScript, and I'm growing my skills in TypeScript and C#.</p>
+          <p>Right now I'm completing the Frontend Developer internship at Auspify Technologies, where I'm building practical projects, starting with a responsive landing page and this portfolio.</p>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Pakistan</dd></div>
+            <div><dt>Focus</dt><dd>Responsive, accessible frontends</dd></div>
+            <div><dt>Right now</dt><dd>Frontend internship at Auspify Technologies</dd></div>
+            <div><dt>Available for</dt><dd>Internships and freelance projects</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills</h2>
+        <!-- Set each --level to an honest number between 0% and 100%. Also update aria-valuenow and the percentage text. -->
+        <!-- Adjust each --level (and the matching aria-valuenow / % text) to how confident you actually feel. -->
+        <ul class="skill-grid">
+          <li style="--level:85%;--i:0">
+            <div class="skill-row"><span>HTML5</span><span>85%</span></div>
+            <div class="meter" role="progressbar" aria-label="HTML5 proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span></span></div>
+          </li>
+          <li style="--level:80%;--i:1">
+            <div class="skill-row"><span>CSS3</span><span>80%</span></div>
+            <div class="meter" role="progressbar" aria-label="CSS3 proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span></span></div>
+          </li>
+          <li style="--level:70%;--i:2">
+            <div class="skill-row"><span>JavaScript</span><span>70%</span></div>
+            <div class="meter" role="progressbar" aria-label="JavaScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span></span></div>
+          </li>
+          <li style="--level:60%;--i:3">
+            <div class="skill-row"><span>TypeScript</span><span>60%</span></div>
+            <div class="meter" role="progressbar" aria-label="TypeScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span></span></div>
+          </li>
+          <li style="--level:60%;--i:4">
+            <div class="skill-row"><span>C#</span><span>60%</span></div>
+            <div class="meter" role="progressbar" aria-label="C# proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span></span></div>
+          </li>
+          <li style="--level:65%;--i:5">
+            <div class="skill-row"><span>Git and GitHub</span><span>65%</span></div>
+            <div class="meter" role="progressbar" aria-label="Git and GitHub proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><span></span></div>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Software &amp; Digital Tools</h3>
+        <!-- Add, remove or rename tools to match what you actually use. -->
+        <ul class="tool-grid">
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>Figma</li>
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>Adobe Photoshop</li>
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>Adobe XD</li>
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>Canva</li>
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>Microsoft Office</li>
+          <li class="tool-chip glass shine"><span class="tool-dot"></span>VS Code</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+
+          <article class="project featured glass shine">
+            <div class="mock" aria-hidden="true">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="mock-body">
+                <div class="mock-hero"></div>
+                <div class="mock-lines"><b></b><b></b><b></b></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="status live">Live</span>
+              <h3>Responsive landing page</h3>
+              <p>A landing page with a navigation bar, hero section and call-to-action sections that adapts to mobile, tablet and desktop screens.</p>
+              <ul class="tags">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="links">
+                <a class="text-link" href="https://ssamiasiddiqui4-boop.github.io/landingpage/" target="_blank" rel="noopener">Live demo</a>
+                <a class="text-link" href="https://github.com/ssamiasiddiqui4-boop/landingpage" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Replace these two cards with your finished projects and add links when they are ready. -->
+          <article class="project glass shine">
+            <span class="status">In progress</span>
+            <h3>Dynamic to-do app</h3>
+            <p>Add, complete and delete tasks. Data is saved in the browser with Local Storage.</p>
+            <ul class="tags">
+              <li>JavaScript</li><li>DOM</li><li>Local Storage</li>
+            </ul>
+          </article>
+
+          <article class="project glass shine">
+            <span class="status">In progress</span>
+            <h3>Weather dashboard</h3>
+            <p>Search for a city and see live weather data fetched from a public API.</p>
+            <ul class="tags">
+              <li>Fetch API</li><li>JSON</li><li>Async JavaScript</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <div class="wrap">
+        <h2 class="section-title">Journey</h2>
+        <!-- Add more entries: education, certificates, hackathons, courses. Newest first. -->
+        <ol class="timeline">
+          <li>
+            <p class="when">September 2026</p>
+            <h3>Shipped my first internship project</h3>
+            <p>Published a responsive landing page and deployed it on GitHub Pages.</p>
+          </li>
+          <li>
+            <p class="when">September 2026</p>
+            <h3>Started the Frontend Developer internship at Auspify Technologies</h3>
+            <p>A 4-week practical program with hands-on tasks in HTML, CSS, JavaScript and React.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p>Have a project, an internship opening or a question? Send a message and I'll get back to you as soon as I can.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:ssamiasiddiqui4@gmail.com">ssamiasiddiqui4@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/ssamiasiddiqui4-boop" target="_blank" rel="noopener">github.com/ssamiasiddiqui4-boop</a></li>
+            <!-- Add your LinkedIn once you have the link ready:
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li> -->
+          </ul>
+        </div>
+
+        <form id="contact-form" class="glass" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="60" required>
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="100" required>
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="500" required></textarea>
+            <p class="counter"><span id="count">0</span> / 500</p>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn-primary" id="send-btn">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-bar">
+      <p>&copy; <span id="year">2026</span> Samia Iftikhar. Built with HTML, CSS and JavaScript.</p>
+      <a class="text-link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
